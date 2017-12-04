@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.FanShareScrape = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // FanShareScrape
+            // 
+            this.FanShareScrape.Location = new System.Drawing.Point(12, 12);
+            this.FanShareScrape.Name = "FanShareScrape";
+            this.FanShareScrape.Size = new System.Drawing.Size(128, 68);
+            this.FanShareScrape.TabIndex = 0;
+            this.FanShareScrape.Text = "FanShareScrape";
+            this.FanShareScrape.UseVisualStyleBackColor = true;
+            this.FanShareScrape.Click += new System.EventHandler(this.FanShareScrape_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1374, 523);
+            this.Controls.Add(this.FanShareScrape);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button FanShareScrape;
     }
 }
 
