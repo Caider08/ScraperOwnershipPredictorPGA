@@ -19,9 +19,19 @@ namespace ScraperOwnershipPredictorPGA
         List<string> Rows = new List<string>();
         List<string> Names = new List<string>();
 
+        PredictionContext _context;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            _context = new PredictionContext();
+
         }
 
         private void FanShareScrape_Click(object sender, EventArgs e)
